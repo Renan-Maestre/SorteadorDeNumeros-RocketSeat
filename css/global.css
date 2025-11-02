@@ -1,45 +1,143 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-   
+  box-sizing: border-box;
+
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
-:root{
+:root {
   /* Colors */
   /*Content  */
 
   --content-primary: #FFFFFF;
-  --content-secondary:#C7C9CC;
-  --content-tertiary:#D9D9D9;
+  --content-secondary: #C7C9CC;
+  --content-tertiary: #D9D9D9;
   --content-brand: #C58DE7;
-  --color-inverse:#030203;
+  --color-inverse: #030203;
 
   /* Background */
 
-  --background-primary:#020202;
-  --background-secondary:#111012;
-  --background-tertiary:#24222E;
-  --background-brand:#C58DE7;
-  --background-gray:#3D3D3D;
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222E;
+  --background-brand: #C58DE7;
+  --background-gray: #3D3D3D;
 
   /* Accent */
-  --accent-pink:#D586E0;
-  --accent-blue:#91A1FA;
-  --accent-green:#77C0AF;
-  --accent-lime:#D1DC97;
-  --accent-red:#E9A9B3;
+  --accent-pink: #D586E0;
+  --accent-blue: #91A1FA;
+  --accent-green: #77C0AF;
+  --accent-lime: #D1DC97;
+  --accent-red: #E9A9B3;
 
   /* Gradient */
 
-  --gradient-border: linear-gradient(90deg,#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
-  --gradient-background:linear-gradient(90deg,#D586E0 0%, #91A1FA 98.93%);
-  --gradient-content:linear-gradient(90deg,#C7C9CC 0%, #3D3D3D 100%);
+  --gradient-border: linear-gradient(90deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  --gradient-background: linear-gradient(90deg, #D586E0 0%, #91A1FA 98.93%);
+  --gradient-content: linear-gradient(90deg, #C7C9CC 0%, #3D3D3D 100%);
 
+
+
+  /* Font familly */
+
+  --ff-sora: "Sora", sans-serif;
+  --ff-roboto-mono: "Roboto Mono", monospace;
+  --ff-roboto-flex: "Roboto Flex", sans-serif;
+
+  /* Tamanhos de fonte */
+  --fs-display-large: 72px;
+  --fs-display-medium: 40px;
+  --fs-display-small: 32px;
+  --fs-paragraph-large: 16px;
+  --fs-paragraph-medium: 14px;
+  --fs-paragraph-small: 12px;
+  --fs-label-medium: 20px;
+  --fs-label-small: 16px;
+  --fs-overline: 16px;
+
+  /* Pesos de fonte */
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Alturas de linha */
+  --lh-display: 130%;
+  --lh-text: 150%;
+
+}
+
+/* Classes para a Fonte Sora */
+.sora-display-large {
+  font-family: var(--ff-sora);
+  font-size: var(--fs-display-large);
+  line-height: var(--lh-display);
+  font-weight: var(--fw-extrabold);
+  text-transform: uppercase;
+}
+
+.sora-display-medium {
+  font-family: var(--ff-sora);
+  font-size: var(--fs-display-medium);
+  line-height: var(--lh-display);
+  font-weight: var(--fw-extrabold);
+  text-transform: uppercase;
+}
+
+.sora-display-small {
+  font-family: var(--ff-sora);
+  font-size: var(--fs-display-small);
+  line-height: var(--lh-display);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+/* Classes para a Fonte Roboto Mono */
+.roboto-mono-overline {
+  font-family: var(--ff-roboto-mono);
+  font-size: var(--fs-overline);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+/* Classes para a Fonte Roboto Flex */
+.roboto-flex-paragraph-large {
+  font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-paragraph-large);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-medium);
+}
+
+.roboto-flex-paragraph-medium {
+  font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-paragraph-medium);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-medium);
+}
+
+.roboto-flex-paragraph-small {
+  font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-paragraph-small);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-medium);
+}
+
+.roboto-flex-label-medium {
+  font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-label-medium);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-bold);
+}
+
+.roboto-flex-label-small {
+  font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-label-small);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-bold);
 }
