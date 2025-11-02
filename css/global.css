@@ -141,3 +141,41 @@
   line-height: var(--lh-text);
   font-weight: var(--fw-bold);
 }
+
+.container {
+    --max-width: 1080px;
+    --horizontal-padding: 8rem; /* Nova variável para os 8rem */
+
+    
+    
+    /* 2. Ajusta a largura para incluir a borda (padding) no cálculo */
+    /* Explicação da width:
+       - min( ... ) garante que a largura seja no máximo a --max-width.
+       - 100% - (var(--horizontal-padding) * 2) garante que o container sempre tenha
+         8rem de respiro em telas menores que a --max-width, evitando o scroll horizontal.
+    */
+    width: min(var(--max-width), calc(100% - (var(--horizontal-padding) * 2)));
+
+    /* 3. Mantém a centralização */
+    margin-inline: auto;
+}
+
+body {
+  background-color: var(--background-primary);
+  background-image: linear-gradient(to top, transparent 0%, var(--background-primary) 80%), 
+                    url(/assets/img/background.png);
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+
+}
+main{
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  gap: 6.75rem;
+
+  height: 70vh;
+  background-color: rgba(165, 42, 42, 0.419);
+}
