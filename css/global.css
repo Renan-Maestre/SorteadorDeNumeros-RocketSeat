@@ -174,8 +174,8 @@ main{
   flex-grow: 1;
   overflow-y: auto;
   display: flex;
-  gap: 6.75rem;
+  gap: rem;
 
   height: 70vh;
-  background-color: rgba(165, 42, 42, 0.419);
+  
 }

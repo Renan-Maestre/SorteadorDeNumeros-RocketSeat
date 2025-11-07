@@ -1,8 +1,36 @@
-#content{
+#content {
   flex: 1;
-  background-color: rgba(91, 165, 42, 0.419);
+  
 
-  & span{
-    color: var(--gradient-content);
+  & span {
+    background-image: var(--gradient-content);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+
+  & h1{
+    
+    color: var(--content-primary);
+    margin-bottom: 2.375rem;
+  }
+
+  & .div-question {
+
+    margin-bottom: 2.25rem;
+    display: flex;
+    flex: top;
+    
+
+
+    & .title-question{
+      color: var(--content-brand);
+    }
+
+    & p {
+      color: white;
+    }
+
   }
 }
