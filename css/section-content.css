@@ -1,17 +1,21 @@
+
+
+
 #content {
   flex: 1;
-  
+
 
   & span {
     background-image: var(--gradient-content);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
   
   }
 
   & h1{
-    
+    margin-top: 1.5rem;
     color: var(--content-primary);
     margin-bottom: 2.375rem;
   }

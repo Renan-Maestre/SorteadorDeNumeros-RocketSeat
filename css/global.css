@@ -40,7 +40,7 @@
 
   --gradient-border: linear-gradient(90deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
   --gradient-background: linear-gradient(90deg, #D586E0 0%, #91A1FA 98.93%);
-  --gradient-content: linear-gradient(90deg, #C7C9CC 0%, #3D3D3D 100%);
+  --gradient-content: linear-gradient(90deg, #C7C9CC 0%, #4b4a4a 100%);
 
 
 
@@ -112,6 +112,7 @@
   font-size: var(--fs-paragraph-large);
   line-height: var(--lh-text);
   font-weight: var(--fw-medium);
+  color: var(--content-primary);
 }
 
 .roboto-flex-paragraph-medium {
@@ -119,6 +120,7 @@
   font-size: var(--fs-paragraph-medium);
   line-height: var(--lh-text);
   font-weight: var(--fw-medium);
+  color: var(--content-secondary);
 }
 
 .roboto-flex-paragraph-small {
@@ -126,6 +128,7 @@
   font-size: var(--fs-paragraph-small);
   line-height: var(--lh-text);
   font-weight: var(--fw-medium);
+  
 }
 
 .roboto-flex-label-medium {
@@ -174,7 +177,7 @@ main{
   flex-grow: 1;
   overflow-y: auto;
   display: flex;
-  gap: rem;
+
 
   height: 70vh;
   

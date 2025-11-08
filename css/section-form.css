@@ -1,4 +1,137 @@
-#form{
-  flex: 1;
-  background-color: rgba(42, 75, 165, 0.419);
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ width: 35rem;
+  margin-top: 2.5rem;
+  gap: 4rem;
+}
+
+.form{
+  width: 75%;
+}
+
+
+
+/* Contêiner para os 3 inputs alinhados horizontalmente */
+.input-group {
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  gap: 10px; /* Espaçamento entre os inputs */
+  margin-bottom: 20px;
+}
+
+/* Estilo dos inputs de número */
+.input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; /* Faz os itens crescerem para preencher o espaço */
+}
+
+.input-item label {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #C7C9CC;
+}
+
+.input-item input[type="number"] {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+  -moz-appearance: textfield; /* Remove setas no Firefox */
+}
+
+/* Remove setas de incremento/decremento em navegadores WebKit (Chrome, Safari) */
+.input-item input[type="number"]::-webkit-outer-spin-button,
+.input-item input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Estilo do switch (radio/checkbox estilizado) */
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* O input tipo checkbox é o "radio" estilizado na imagem */
+.switch-container input[type="checkbox"] {
+  /* Esconde o checkbox padrão */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Cria o visual do switch */
+.switch-container label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+    font-family: var(--ff-roboto-flex);
+  font-size: var(--fs-paragraph-medium);
+  line-height: var(--lh-text);
+  font-weight: var(--fw-medium);
+}
+
+.switch-toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #555;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: all 0.4s ease;
+}
+
+.switch-toggle::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.4s ease;
+}
+
+
+
+/* Estado ATIVO do switch */
+.switch-container input:checked + label .switch-toggle {
+  background: var(--gradient-background)
+}
+
+.switch-container input:checked + label .switch-toggle::before {
+  transform: translateX(20px);
+}
+
+/* Estilo do botão */
+.sortear-button {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333; /* Fundo do botão */
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sortear-button:hover {
+  background-color: #444444;
 }
