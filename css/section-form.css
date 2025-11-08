@@ -45,6 +45,7 @@
   font-size: 2em;
   text-align: center;
   -moz-appearance: textfield; /* Remove setas no Firefox */
+  appearance: textfield; /* Padrão para outros navegadores */
 }
 
 /* Remove setas de incremento/decremento em navegadores WebKit (Chrome, Safari) */
@@ -134,4 +135,75 @@
 
 .sortear-button:hover {
   background-color: #444444;
+}
+
+/* Seção de Resultado */
+#resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 35rem;
+  margin-top: 2.5rem;
+  gap: 4rem;
+}
+
+.resultado-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.resultado-info {
+  margin: 1rem 0 2rem 0;
+  color: var(--content-secondary);
+}
+
+.numeros-sorteados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.numero-sorteado {
+  background: var(--gradient-background);
+  color: white;
+  font-family: var(--ff-sora);
+  font-size: var(--fs-display-medium);
+  font-weight: var(--fw-bold);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortear-novamente-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sortear-novamente-button:hover {
+  background-color: #444444;
+}
+
+.sortear-novamente-button img {
+  width: 20px;
+  height: 20px;
 }

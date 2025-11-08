@@ -97,8 +97,25 @@
           </form>
         </div>
       </section>
+      
+      <!-- Seção de Resultado - inicialmente oculta -->
+      <section id="resultado" style="display: none;">
+        <div class="resultado-content">
+          <span class="roboto-mono-overline">RESULTADO DO SORTEIO</span>
+          <p class="roboto-flex-paragraph-medium resultado-info">1º RESULTADO</p>
+          
+          <div class="numeros-sorteados" id="numerosSorteados">
+            <!-- Os números sorteados serão inseridos aqui dinamicamente -->
+          </div>
+          
+          <button class="sortear-novamente-button roboto-flex-label-medium" onclick="sortearNovamente()">
+            <img src="assets/svg/replay.svg" alt="Replay icon">
+            SORTEAR NOVAMENTE
+          </button>
+        </div>
+      </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
